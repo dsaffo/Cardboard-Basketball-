@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 20c74b48d39be204087e95f69c841063
+timeCreated: 1464365010
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - ball: {instanceID: 0}
+  - availableShotsGO: {instanceID: 0}
+  - gameOver: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
