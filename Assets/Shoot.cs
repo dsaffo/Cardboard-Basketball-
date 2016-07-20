@@ -23,7 +23,7 @@ public class Shoot : MonoBehaviour
     private double passedTime;
     private int totalScore;
     private int roundScore;
-    // public Collider trigger;
+    
     private float power;
     int weight = 0;
     int counter;
@@ -31,32 +31,25 @@ public class Shoot : MonoBehaviour
     static Color c1 = new Color(0, 0, 0, 1);
     static Color c2 = new Color(1, 0, 1, 1);
     static Color c3 = new Color(1, 0, 0, 1);
-   // static Color c4 = new Color(1, 1, 1, 1);
-   // static Color c5 = new Color(1, 0.92f, 0.016f, 1);
+  
     Color[] colors = new Color[] { c1, c2, c3};
     List<Color> ColorList = new List<Color>();
     float currentTime = 0;
     static float w1 = .85f;
     static float w2 = 1f;
     static float w3 = 1.15f;
-  //  static double w4 = 2.5f;
-   // static double w5 = 3;
+  
     float[] weights= new float[] { w1, w2, w3};
     List<float>  WeightList = new List<float>();
 
 
 
-    /*
-   public GameObject meter;
-   public GameObject arrow;
-   private float arrowSpeed = 0.3f;
-   private bool right = true;
-   */
+    
     
 
     CardboardHead head = null;
 
-    // Use this for initialization
+   
     void Start()
     {
 
@@ -180,9 +173,6 @@ public class Shoot : MonoBehaviour
 
         }
 
-        // power++;
-       
-       // charge.text = power.ToString();
         
         if (Cardboard.SDK.Triggered)
         {
@@ -193,28 +183,7 @@ public class Shoot : MonoBehaviour
         }
 
 
-
-            /* count++;
-            if (chargetime == -1.0 && count == 1)
-
-            {
-                print("----IF " + chargetime);
-                chargetime = Time.time;
-            }
-            if (count == 1)
-            {
-                count = 0;
-                chargetime = Time.time;
-                throwball = true;
-            }
-            else
-            {
-                print("----ELSE " + chargetime);
-                chargetime = (Time.time - chargetime);
-                throwball = true;
-
-        }
-        */
+        
     
 
         if (throwball && !ballThrown)
@@ -237,7 +206,7 @@ public class Shoot : MonoBehaviour
             ballThrown = false;
             throwball = false;
             NewBall(ballThrown);
-            // throwSpeed = new Vector3(0,1,2);
+           
 
             power = 0;
             increase = true;
@@ -247,11 +216,4 @@ public class Shoot : MonoBehaviour
 
     }
 
-
-
-    // Update is called once per frame
-    /*void restart () {
-        Application.LoadLevel(Application.loadedLevel);
-	}
-    */
 }
